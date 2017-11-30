@@ -1,0 +1,36 @@
+# Taller_3
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+   int x;
+
+        printf("Tamaño de la matriz: ");scanf("%i",&x);
+        
+        int a[x][x];
+        int i , j, k ;
+        for (i = 0; i < x; i++) {
+            for (j = 0; j < x; j++) {
+                printf("Digite numero en la posicion [" , i , "][" , j , "]:");scanf("%i",&a[i][j]);
+                
+            }
+        }
+        for (i = 0; i < x; i++) {
+            for (j = 0; j < x; j++) {
+                printf("%i", + a[i][j]);
+            }
+            printf("\n");
+        }
+        printf("matriz transpuesta \n");
+        for (i = 0; i < x; i++) {
+            for (j = 0; j < x; j++) {
+                printf("%i" , a[j][i]);
+            }
+            printf("\n");
+        }
+  
+ system("PAUSE");
+  return 0;
+}
