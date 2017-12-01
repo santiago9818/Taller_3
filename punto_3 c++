@@ -5,70 +5,70 @@
 
 int main()
 {
-    int x;
-     printf("Digite el tamaño del vector: ");scanf("%i",&x);
+    int x;// declaracion de variables 
+     printf("Digite el tamaño del vector: ");scanf("%i",&x);// instruccion para digitar el tamaño del arreglo
 
        
-        int a[x][x];
-        int i = 0, j = 0, k = 0;
-        for (i = 0; i < x; i++) {
-            for (j = 0; j < x; j++) {
-                printf("Digite numero en la posicion [",i,"][",j,"]:");
-                scanf("%i",&a[i][j]);
+        int a[x][x];// incializacion de la matriz
+        int i = 0, j = 0, k = 0;// declaracion de variables
+        for (i = 0; i < x; i++) {// ciclo para las filas
+            for (j = 0; j < x; j++) {// ciclo para las columnas
+                printf("Digite numero en la posicion [",i,"][",j,"]:");// mensaje 
+                scanf("%i",&a[i][j]);// instruccion para digitar valores en la matriz
                 
             }
         }
-        for (i = 0; i < x; i++) {
-            for (j = 0; j <x; j++) {
-                printf("%i",a[i][j]);
+        for (i = 0; i < x; i++) {// ciclo filas
+            for (j = 0; j <x; j++) {// ciclo columnas
+                printf("%i",a[i][j]);// imprimir matriz
             }
             
         }
         printf("\n");
-       printf("Los pares son: ");
-        for (i = 0; i < x; i++) {
-            for (j = 0; j < x; j++) {
-                if (a[i][j] % 2 == 0) {
+       printf("Los pares son: ");// mensaje
+        for (i = 0; i < x; i++) {// ciclo filas
+            for (j = 0; j < x; j++) {// ciclo para columnas
+                if (a[i][j] % 2 == 0) {// condicional para saber los pares
                     printf("%i\n",a[i][j]);
 
                 }
             }    
         }
-        printf("Los impares son: ");
-         for (i = 0; i <x; i++) {
-            for (j = 0; j <x; j++) {
+        printf("Los impares son: ");// mensaje para los impares
+         for (i = 0; i <x; i++) {// ciclo filas
+            for (j = 0; j <x; j++) {// ciclo columnas
         
         
             
-                if (a[i][j]%2!=0){
-                    printf( "%i\n", a[i][j]);
+                if (a[i][j]%2!=0){// condicional para impares
+                    printf( "%i\n", a[i][j]);// imprimir numeros impares
                 }
                     
             }
                
         }
-         printf("Los numeros positivos son: ");
-          for (i = 0; i < x; i++) {
-            for (j = 0; j < x; j++) {
+         printf("Los numeros positivos son: ");//mensaje
+          for (i = 0; i < x; i++) {// ciclo filas
+            for (j = 0; j < x; j++) {// ciclo columnas
         
         
             
-                if (a[i][j]>0){
-                    printf( "%i\n", a[i][j]);
+                if (a[i][j]>0){// condicional  para positivos 
+                    printf( "%i\n", a[i][j]);// imprecion numeros positivos 
                 }
                     
             }
                
         }
-          printf("Los numeros negativos son: ");
-          for (i = 0; i < x; i++) {
-            for (j = 0; j < x; j++) {
+          printf("Los numeros negativos son: ");// mensaje 
+          for (i = 0; i < x; i++) {//ciclo filas
+            for (j = 0; j < x; j++) {// ciclo columnas
         
         
             
-                if (a[i][j]<0){
+                if (a[i][j]<0){// condicional para negativos 
                     
-                    printf("%i\n", a[i][j]);
+                    printf("%i\n", a[i][j]);// imprecion para numeros negativos 
                 }
                     
             }
