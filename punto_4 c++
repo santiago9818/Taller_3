@@ -5,28 +5,28 @@
 
 int main()
 {
-   int x;
+   int x;// declaracion de variables
 
-        printf("Tamaño de la matriz: ");scanf("%i",&x);
+        printf("Tamaño de la matriz: ");scanf("%i",&x);// instruccion para imprimir la matriz
         
-        int a[x][x];
-        int i , j, k ;
-        for (i = 0; i < x; i++) {
-            for (j = 0; j < x; j++) {
-                printf("Digite numero en la posicion [" , i , "][" , j , "]:");scanf("%i",&a[i][j]);
+        int a[x][x];// declaracion de arreglo
+        int i , j, k ;// declaracion de variables
+        for (i = 0; i < x; i++) {// ciclo filas
+            for (j = 0; j < x; j++) {// ciclo columnas
+                printf("Digite numero en la posicion [" , i , "][" , j , "]:");scanf("%i",&a[i][j]);// instruccion para digitar los numeros 
                 
             }
         }
-        for (i = 0; i < x; i++) {
-            for (j = 0; j < x; j++) {
-                printf("%i", + a[i][j]);
+        for (i = 0; i < x; i++) {// ciclo filas
+            for (j = 0; j < x; j++) {// ciclo columnas
+                printf("%i", + a[i][j]);// impresion de la matriz
             }
             printf("\n");
         }
-        printf("matriz transpuesta \n");
-        for (i = 0; i < x; i++) {
-            for (j = 0; j < x; j++) {
-                printf("%i" , a[j][i]);
+        printf("matriz transpuesta \n");// matriz transpuesta
+        for (i = 0; i < x; i++) {// ciclo filas
+            for (j = 0; j < x; j++) {// ciclo columnas
+                printf("%i" , a[j][i]);// imrprecion de la transpuesta
             }
             printf("\n");
         }
