@@ -7,43 +7,43 @@ public class ejercicio_5
  {
    public static void main(String[] args) 
     {
-        Scanner entrada = new Scanner(System.in);
-      Random rd = new Random(System.nanoTime());  
+        Scanner entrada = new Scanner(System.in);// declaracion de objeto de la libreria Scanner
+       // declaracion de varaibles y matriz
       int n =3,i,j;
       int aux = 0 ;
       int matriz [][]=new int [n][n];
       
-       for(i=0;i<n;i++)
+       for(i=0;i<n;i++)// ciclo filas 
       {
-       for(j=0;j<n;j++)
+       for(j=0;j<n;j++)// ciclo columnas
        {
-           System.out.println("digite el numero en la posicion " + " [ " + i + " ] " + " [ " + j + " ] ");
-           aux=entrada.nextInt();
-            matriz[i][j]=aux;
+           System.out.println("digite el numero en la posicion " + " [ " + i + " ] " + " [ " + j + " ] ");// instruccion para digitar los valores 
+           aux=entrada.nextInt();// digitar los valores 
+            matriz[i][j]=aux;// colocar valores en la matriz
        }
       }
         
-        for(i=0;i<n;i++)
+        for(i=0;i<n;i++)// ciclo filas
       {
-       for(j=0;j<n;j++)
+       for(j=0;j<n;j++)// ciclo columnas
        {
-           System.out.print(matriz[i][j]);
+           System.out.print(matriz[i][j]);// imprimir matriz
        }
           System.out.println();
        }
 
       
-      for(i=0;i<n;i++)
+      for(i=0;i<n;i++)// ciclo filas
       {
-        for(j=0;j<n;j++)
+        for(j=0;j<n;j++)// ciclo columnas
       {
-          if(i+j>=(n/2)&&i+(n/2)>=j&&j+(n/2)>=i&& i +j<=(n/2)+n-1 )
+          if(i+j>=(n/2)&&i+(n/2)>=j&&j+(n/2)>=i&& i +j<=(n/2)+n-1 )// condicional para los numeros dentro del rombo 
           {
-              System.out.println(); 
+              System.out.println(); // si es asi no imprima nada 
           }
-          else
+          else// sino 
           {
-              System.out.print( "los numeros fuera del robo son : " +  matriz[i][j] + ",");
+              System.out.print( "los numeros fuera del robo son : " +  matriz[i][j] + ",");// impresion de los numeros fuera del rombo 
               
           }
       }
