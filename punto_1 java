@@ -1,56 +1,49 @@
 # Taller_3
-import java.util.Scanner;
+import java.util.Scanner;// importacion Scanner
 
 public class ProgramaPrincipal {
     public static void main(String[] args)
     {
-       ProgramaPrincipal c = new ProgramaPrincipal();
-       c.ejercicio1(3);
+       ProgramaPrincipal c = new ProgramaPrincipal();// creacion de objeto de la clase
+       c.ejercicio1(3);// llamar el metodo
     }
-    public void ejercicio1 (int x) 
+    public void ejercicio1 (int x) // metodo
     {
-        Scanner entrada=new Scanner (System.in);
+        Scanner entrada=new Scanner (System.in);// objeto de la clase Scanner
       
-        System.out.println("Digite el tamaño del vector: ");
-         
-       x=entrada.nextInt();
-       int i=0,j=0,k=0;
- 
+        System.out.println("Digite el tamaño del vector: ");// mensaje
         
-        if(x%2==0)
-        {
-            x++;
-        }
+       x=entrada.nextInt();// digitar el tamaño del vetor 
+       int i=0,j=0,k=0;// declaracion de variables esnteras
  
-      
-        for(i=1;i<=x;i=i+2)
+       for(i=1;i<=x;i=i+2)// ciclo para filas
         {
             
-            for(k=x+1;k>=i;k=k-2)
+            for(k=x+1;k>=i;k=k-2)// cilo para columnas
             {
-                System.out.print(" ");
+                System.out.print(" ");// mensaje imprimir vacio
             }
       
-            for(j=0;j<i;j++)
+            for(j=0;j<i;j++)// ciclo para lo de adentro del rombo
             {
                 System.out.print("*");
             }
             System.out.println();
         }
     
-        for(i=x;i>=1;i=i-2)
+        for(i=x;i>=1;i=i-2)//ciclo filas
         {
             
-            for(k=i;k<=x+2;k=k+2)
+            for(k=i;k<=x+2;k=k+2)//ciclo columnas
             {
-                System.out.print(" ");
+                System.out.print(" ");// mensaje vacio
             }
           
-            for(j=i-2;j>0;j--)
+            for(j=i-2;j>0;j--)// ciclo para lo de adentro del rombo
             {
-                System.out.print("*");
+                System.out.print("*");// llenar matriz
             }
-            System.out.println();
+            System.out.println();// imprimir rombo
         }
         }
         
